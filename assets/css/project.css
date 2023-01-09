@@ -1,0 +1,119 @@
+section{
+    min-height: 400px;
+}
+body {
+    position: relative;
+}
+
+*{
+    font-family: 'Nunito';
+}
+
+.nav-link{
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: 600;
+}
+.navbar-brand{
+    font-weight: 700;
+}
+
+.jumbotron{
+    background-image: url('../assets/img/5259951.jpg');
+    height: 560px;
+    position: relative;
+    padding-top: 50px;
+    margin-top: -40px;
+}
+.jumbotron .container{
+    z-index: 1;
+    position: relative;
+    padding-top: 45px;
+}
+.jumbotron .display-4{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0 , 0.7);
+}
+.jumbotron::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.about{
+    margin-top: -30px;
+}
+
+.container span1{
+    color: rgb(238, 238, 238);
+    font-family: 'Nunito';
+}
+.container span2{
+    color: rgb(52, 116, 255);
+    font-family: 'Nunito';
+    font-style: italic;
+}
+
+.col h2{
+    text-transform: uppercase;
+    font-weight: 200;
+    
+}
+.col p{
+    font-weight: 100;
+}
+
+.workingspace{
+    margin-top: 50px;
+    text-align:center;
+}
+.workingspace h3{
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.workingspace h3 span{
+    font-weight: 500;
+}
+.workingspace p{
+    font-size: 18px;
+    color: #838282;
+    font-weight: 200;
+    margin: 30px 0;
+}
+
+.tombol{
+    text-transform: uppercase;
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px rgb(0,0,0,0.6);
+    font-weight: 550;
+}
+
+
+@media (min-width: 992px) {  
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #366cff;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 3px;
+        margin-bottom: -8px;
+    } 
+    .navbar-brand{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .jumbotron{
+        background-image: url('../assets/img/5259951.jpg');
+        height: 800px;
+        margin-bottom: 35px;
+    }
+    .profil{
+        margin-top: -20px;
+    }
+}
